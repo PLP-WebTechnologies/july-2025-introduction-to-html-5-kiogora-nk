@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A beginner-friendly semantic HTML5 page built for accessibility and SEO. Created by Kiogo Newton.">
+  <meta name="keywords" content="HTML5, semantic tags, accessibility, SEO, web development">
+  <meta name="author" content="Kiogo Newton">
+  <title>Kiogo's Semantic Web Page</title>
+</head>
+<body>
+
+  <!-- Skip to content link for screen readers -->
+  <a href="#main" style="position:absolute;left:-9999px;">Skip to main content</a>
+
+  <header role="banner">
+    <h1>Welcome to Kiogo's Semantic Web Page</h1>
+    <p>This is a modern HTML5 page demonstrating semantic layout, accessibility, and SEO.</p>
+  </header>
+
+  <nav role="navigation" aria-label="Main Menu">
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#article">Latest Article</a></li>
+      <li><a href="#contact">Contact Info</a></li>
+    </ul>
+  </nav>
+
+  <main id="main" role="main">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>My name is <strong>Kiogo Newton</strong>, a passionate student and aspiring developer currently learning HTML5. I love creating accessible and SEO-friendly websites.</p>
+    </section>
+
+    <section id="article">
+      <h2>Latest Blog Article</h2>
+      <article>
+        <header>
+          <h3>Why Semantic HTML Matters</h3>
+          <p><time datetime="2025-07-29">July 29, 2025</time></p>
+        </header>
+        <p>Semantic HTML is important because it improves how both humans and machines understand your web page. It helps screen readers, search engines, and developers better interpret your content.</p>
+        <footer>
+          <p>Written by Kiogo Newton</p>
+        </footer>
+      </article>
+    </section>
+
+    <aside>
+      <h2>Quick Tips for SEO</h2>
+      <ul>
+        <li>Use heading tags in logical order (h1 → h2 → h3...)</li>
+        <li>Add meaningful metadata in the &lt;head&gt; section</li>
+        <li>Write readable and relevant content</li>
+      </ul>
+    </aside>
+  </main>
+
+  <section id="contact" aria-labelledby="contact-heading">
+    <h2 id="contact-heading">Contact Me</h2>
+    <address>
+      Email: <a href="mailto:newtonkiogora87@gmail.com">newtonkiogora87@gmail.com</a><br>
+      Phone: <a href="tel:+254745395981">+254 745 395 981</a>
+    </address>
+  </section>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Kiogo Newton. All rights reserved.</p>
+    <p>Made with ❤️ using HTML5.</p>
+  </footer>
+
+</body>
+</html>
